@@ -1,9 +1,13 @@
 package main.model;
 
-public class Bloon {
+public class Bloons {
     private int health;
     private int speed;
-    // Autres propriétés des Bloons
+    private String type; // Type de Bloons, par exemple : "standard", "fortifié", "rapide", etc.
 
-    // Constructeur, getters, setters et autres méthodes
+    public Bloons(int health, int speed, String type) {
+        this.health = health;
+        this.speed = speed;
+        this.type = type;
+    }
 }
