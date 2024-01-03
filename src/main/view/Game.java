@@ -7,16 +7,16 @@ public class Game extends JFrame {
 
     public Game() {
         setTitle("Tower Defense Game");
-        setSize(400, 400);
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setLocationRelativeTo(null);
+        setSize(800, 600); // Définit la taille de la fenêtre
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null); // Centre la fenêtre
 
-        Screen screen = new Screen(); // Initialise et ajoute le panneau de jeu
-        add(screen);
-        setVisible(true); // Affiche la fenêtre après l'ajout de tous les composants
+        Screen screen = new Screen();
+        add(screen); // Ajoute le Screen au JFrame
+        setVisible(true);
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(Game::new); // Lance l'interface utilisateur sur le EDT
+        SwingUtilities.invokeLater(() -> new Game()); // Lance la fenêtre dans le EDT
     }
 }
