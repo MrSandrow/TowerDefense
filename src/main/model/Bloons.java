@@ -71,6 +71,7 @@ public class Bloons {
         return y;
     }
 
+    // Méthode pour mettre à jour la position
     public void setPosition(int x, int y) {
         this.x = x;
         this.y = y;

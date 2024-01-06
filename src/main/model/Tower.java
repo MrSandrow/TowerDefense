@@ -5,6 +5,7 @@ public class Tower {
     private int damage;
     private int cost; // Coût pour placer la tour
     private TowerType type; // Type de la tour, par exemple: sniper, canon, etc.
+
     private int x;
     private int y;
 
@@ -64,6 +65,16 @@ public class Tower {
     public void setType(TowerType type) {
         this.type = type;
     }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    // Méthode pour définir la position
 
     public void setPosition(int x, int y) {
         this.x = x;
