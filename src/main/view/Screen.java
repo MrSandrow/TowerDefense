@@ -63,5 +63,6 @@ public class Screen extends JPanel {
         }
 
         repaint(); // Rafraîchir l'affichage après chaque mise à jour
+        //
     }
 }
