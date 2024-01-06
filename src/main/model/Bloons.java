@@ -4,8 +4,8 @@ public class Bloons {
     private int health;
     private int speed;
     private String type; // Type de Bloons, par exemple : "standard", "fortifié", "rapide", etc.
-    private int x; // Coordonnée X
-    private int y; // Coordonnée Y
+    private int x;
+    private int y;
 
     public Bloons(int health, int speed, String type, int x, int y) {
         this.health = health;
