@@ -4,11 +4,15 @@ public class Bloons {
     private int health;
     private int speed;
     private String type; // Type de Bloons, par exemple : "standard", "fortifié", "rapide", etc.
+    private int x;
+    private int y;
 
-    public Bloons(int health, int speed, String type) {
+    public Bloons(int health, int speed, String type, int x, int y) {
         this.health = health;
         this.speed = speed;
         this.type = type;
+        this.x = x;
+        this.y = y;
     }
 
     // Diminue la santé des Bloons. Appelée lorsque les Bloons sont touchés par une
@@ -57,6 +61,19 @@ public class Bloons {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public void setPosition(int x, int y) {
+        this.x = x;
+        this.y = y;
     }
 
     // Méthode toString pour une représentation textuelle des Bloons
