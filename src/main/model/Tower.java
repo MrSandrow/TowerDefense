@@ -5,12 +5,16 @@ public class Tower {
     private int damage;
     private int cost; // Coût pour placer la tour
     private TowerType type; // Type de la tour, par exemple: sniper, canon, etc.
+    private int x; // Coordonnée X
+    private int y; // Coordonnée Y
 
-    public Tower(int range, int damage, int cost, TowerType type) {
+    public Tower(int range, int damage, int cost, TowerType type, int x, int y) {
         this.range = range;
         this.damage = damage;
         this.cost = cost;
         this.type = type;
+        this.x = x;
+        this.y = y;
     }
 
     // Méthode pour attaquer les Bloons
@@ -59,6 +63,20 @@ public class Tower {
 
     public void setType(TowerType type) {
         this.type = type;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    // Méthode pour définir la position
+    public void setPosition(int x, int y) {
+        this.x = x;
+        this.y = y;
     }
 }
 
