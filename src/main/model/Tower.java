@@ -81,10 +81,3 @@ public class Tower {
         this.y = y;
     }
 }
-
-// Énumération pour les différents types de tours
-enum TowerType {
-    SNIPER,
-    CANNON,
-    LASER,
-}
